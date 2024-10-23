@@ -1,0 +1,82 @@
+.event {
+    width: 100%;
+    background-color: #F2EEE3;
+}
+
+.teksjudul-event {
+    color: #E3B063;
+    font-family: 'Dancing-Script', cursive;
+    font-size: 48px;
+}
+
+.teks-event {
+    color: #907B57;
+    font-family: 'Crimson Pro', cursive;
+    font-size: 15px;
+}
+
+.tekssubjudul-event {
+    color: #5C4928;
+    font-family: 'Amiri';
+    font-size: 18px;
+}
+
+.teksdoa-event {
+    color: #835C23;
+    font-family: 'Crimson Pro', cursive;
+    font-size: 16px;
+}
+
+.kotak-event {
+    width: 302px;
+    height: 1300px;
+    background: white;
+    margin: 0;
+    box-shadow: 4px 4px #B2B2B2;
+    border-radius: 25px;
+}
+
+.tengah-event {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.teksalign-event {
+    text-align: center;
+}
+
+.teksleft-event {
+    padding-left: 17%;
+    padding-right: 10%;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    text-align: left;
+}
+
+a.tombol {
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 12px;
+    background: #A7926D;
+    padding: 8px 30px 8px 30px;
+    text-decoration: none;
+}
+
+a.tombol:hover {
+    background: #8a7550;
+    text-decoration: none;
+}
+
+.teksleft-event img {
+    margin-left: -32px;
+    margin-right: 8px;
+}

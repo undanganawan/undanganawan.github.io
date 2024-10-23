@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+
+    <title>Wedding Invitation - FulanaFulan</title>
+    <link href="asset\favicon.ico" rel="shortcut icon" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ui kit -->
+    <!-- <link rel="stylesheet" href="css/uk/css/uikit.min.css" />
+    <script src="js/uk/js/uikit.min.js"></script>
+    <script src="js/uk/js/uikit-icons.min.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- google font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> -->
+
+    <!-- css local -->
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-home.css" />
+    <link rel="stylesheet" href="css/style-sampul.css" />
+    <link rel="stylesheet" href="css/style-event.css" />
+    <link rel="stylesheet" href="css/style-prokes.css" />
+    <link rel="stylesheet" href="css/style-wishes.css" />
+    <link rel="stylesheet" href="css/style-couple.css" />
+    <link rel="stylesheet" href="css/style-ucapan.css" />
+    <link rel="stylesheet" href="css/style-music.css" />
+    <link rel="stylesheet" href="css/style-animation.css" />
+  </head>
+
+  <body>
+    <div
+      class="sampul sampul_belum_pencet"
+      id="awal"
+      onclick="KeatasSampeIlang()"
+    >
+      <!-- <img id="background-1" src="asset/sampul/background-.png" alt="" srcset=""> -->
+      <!-- <img id="background-2" src="asset/sampul/background-.png" alt="" srcset=""> -->
+      <div class="background-1"></div>
+      <div class="background-2"></div>
+
+      <div class="kata-kata">
+        <div class="margin-top"></div>
+
+        <div class="">
+          <p>Kepada yth<br />bapak/ibu/saudara/i</p>
+        </div>
+        <div class="tamu">
+          <p id="tamu">di Tempat</p>
+          <script>
+            // Function to get a query parameter by name
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+    
+            // Get the value of 'tamu' query parameter from the URL
+            const tamuValue = getQueryParam('tamu');
+    
+            // Check if the parameter exists and set the HTML inside <p id="tamu">
+            if (tamuValue) {
+                document.getElementById('tamu').innerHTML = tamuValue;
+            }
+        </script>
+        </div>
+        <p class="undang">Kami mengundang anda<br />dalam acara pernikahan</p>
+        <br /><br />
+        <h1 class="nama">Fulana & Fulan</h1>
+        <br /><br />
+        <br />
+        <div class="klikdisini">
+          <a class="tombol"> Klik Disini Untuk Membuka Undangan </a>
+        </div>
+      </div>
+    </div>
+    <div class="music pause-music" id="button-audio" onclick="clickAudio()">
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="button"></button> -->
+      <audio id="audio">
+        <source src="asset\music\background-music.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <div class="isi" id="isi">
+      <div class="home">
+        <div class="bingkai-atas center">
+          <img src="asset/home/bingkai-bunga.png" alt="bingkai bunga" />
+        </div>
+        <div class="ucapan center reveal">
+          <div class="biasa reveal">
+            <p>The Wedding of</p>
+          </div>
+          <div class="pengantin reveal">
+            <p>Fulana & Fulan</p>
+          </div>
+          <div class="biasa reveal">
+            <p>Selasa, 27 Desember 2022</p>
+          </div>
+        </div>
+        <div class="bingkai-bawah center">
+          <img src="asset/home/bingkai-bunga-bawah.png" alt="bingkai bunga" />
+        </div>
+      </div>
+
+      <!-- <div class="uk-position-center uk-overlay uk-overlay-default">Center</div> -->
+      <div></div>
+      <div class="couple">
+        <div class="background-atas"></div>
+        <div class="couple-header reveal">We Are Getting Married!</div>
+        <div class="bismilah Tshadow reveal">
+          <p>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْم</p>
+        </div>
+        <div class="couple-salam Tshadow reveal">
+          <p>ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</p>
+        </div>
+        <div class="couple-pembukaan Tshadow reveal">
+          <p>
+            Maha Suci Allah yang telah menciptakan makhluk-Nya
+            berpasang-pasangan. Ya Allah semoga ridho-Mu tercurahkan mengiringi
+            pernikahan kami.
+          </p>
+        </div>
+        <br />
+        <div class="frame-perempuan reveal"></div>
+        <div class="nama-pengantin reveal">
+          <div class="nama Tshadow">
+            <p>Fulana</p>
+          </div>
+          <div class="detail Tshadow">
+            <p>
+              Putri dari Ayahanda Fulana
+              <br />
+              dan Ibunda Fulana
+            </p>
+          </div>
+        </div>
+        <div class="spacing-dan reveal">- & -</div>
+        <div class="frame-laki reveal"></div>
+        <div class="nama-pengantin reveal">
+          <div class="nama Tshadow">
+            <p>Fulan</p>
+          </div>
+          <div class="detail Tshadow">
+            <p>
+              Putra dari Bapak Fulan dan <br />Ibunda Fulan
+            </p>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div class="event">
+        <div class="bingkai-atas center">
+          <img src="asset/home/bingkai-bunga.png" alt="bingkai bunga" />
+        </div>
+        <div class="teksalign-event center">
+          <br />
+          <div class="teksjudul-event reveal">
+            <p>Save The Date</p>
+          </div>
+          <div class="teksdoa-event reveal">
+            <p>
+              Dengan memohon rahmat dan ridho Allah <br />
+              Subhanahu Wa Ta’ala, kami mengundang Bapak <br />
+              /Ibu/saudara/i, untuk menghadiri Resepsi <br />
+              Pernikahan kami
+            </p>
+          </div>
+          <br />
+          <div class="kotak-event tengah-event reveal">
+            <img
+              class=""
+              src="asset/event/fotopohon.png"
+              alt="fotopohon"
+              height="147"
+              width="288"
+            />
+            <br />
+            <br />
+            <div class="tengah-event reveal">
+              <img
+                src="asset/event/ring.png"
+                alt="ring"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="tekssubjudul-event reveal">
+              <p>Akad Nikah</p>
+            </div>
+            <div class="teks-event teksleft-event reveal">
+              <p>
+                <img
+                  src="asset/event/kalender.png"
+                  alt="kalender"
+                  height="21"
+                  width="21"
+                />
+                Selasa, 27 Desember 2022
+                <br />
+                Selasa, 3 Jumadil Akhir 1444 H
+              </p>
+            </div>
+            <div class="teks-event teksleft-event reveal">
+              <p>
+                <img
+                  src="asset/event/jam.png"
+                  alt="jam"
+                  height="21"
+                  width="21"
+                />
+                Pukul 12.00 WIB
+              </p>
+            </div>
+            <div class="teks-event teksleft-event reveal">
+              <p>
+                <img
+                  src="asset/event/lokasi.png"
+                  alt="lokasi"
+                  height="21"
+                  width="21"
+                />
+                Rumah mempelai wanita (Alamat lengkap)
+              </p>
+            </div>
+            <br />
+            <div class="tengah-event reveal">
+              <img
+                src="asset/event/couple.png"
+                alt="couple"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="tekssubjudul-event reveal">
+              <p>Resepsi Pernikahan</p>
+            </div>
+            <div class="teks-event teksleft-event reveal">
+              <p>
+                <img
+                  src="asset/event/kalender.png"
+                  alt="kalender"
+                  height="21"
+                  width="21"
+                />
+                Selasa, 27 Desember 2022
+                <br />
+                Selasa, 3 Jumadil Akhir 1444 H
+              </p>
+            </div>
+            <div class="teks-event teksleft-event reveal">
+              <p>
+                <img
+                  src="asset/event/jam.png"
+                  alt="jam"
+                  height="21"
+                  width="21"
+                />
+                Pukul 13.00 s.d 16.00 WIB
+              </p>
+            </div>
+            <div class="teks-event teksleft-event reveal">
+              <p>
+                <img
+                  src="asset/event/lokasi.png"
+                  alt="lokasi"
+                  height="21"
+                  width="21"
+                />
+                Rumah mempelai wanita (Alamat lengkap)
+              </p>
+            </div>
+            <br />
+            <div class="tekssubjudul-event reveal">
+              <p>Maps</p>
+            </div>
+            <div class="reveal">
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1660.3713271948686!2d114.37424853986948!3d-8.197638355259356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1451916a6b2d3%3A0x45bc61c625f415eb!2sJl.%20Sindoro%20No.4%2C%20Singotrunan%2C%20Kec.%20Banyuwangi%2C%20Kabupaten%20Banyuwangi%2C%20Jawa%20Timur%2068414!5e0!3m2!1sen!2sid!4v1667406114479!5m2!1sen!2sid"
+                  width="230"
+                  height="350"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <br />
+              <div>
+                <a href="https://goo.gl/maps/Z1tfzctuT4A1Dp228" class="tombol"
+                  >Buka Map</a
+                >
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+      <div class="prokes">
+        <div class="teksalign-prokes center">
+          <br />
+          <br />
+          <div class="kotak-prokes tengah-prokes reveal">
+            <br />
+            <div class="teksjudul-prokes reveal">
+              <p>Protokol Kesehatan</p>
+            </div>
+            <div class="teks-prokes reveal">
+              <p>
+                Untuk mematuhi himbauan <br />
+                pemerintah dalam pencegahan<br />
+                penyebaran Covid-19, maka<br />
+                diharapkan Bapak/Ibu/Saudara/i<br />
+                tamu undangan untuk :
+              </p>
+            </div>
+            <div class="tengah-prokes reveal">
+              <img
+                src="asset/prokes/masker.png"
+                alt="masker"
+                height="80"
+                width="80"
+              />
+            </div>
+            <div class="teks-prokes reveal">
+              <p>
+                Memakai masker selama acara<br />
+                berlangsung.
+              </p>
+            </div>
+            <br />
+            <div class="tengah-prokes reveal">
+              <img
+                src="asset\prokes\cuci tangan.png"
+                alt="cuci tangan"
+                height="80"
+                width="80"
+              />
+            </div>
+            <div class="teks-prokes reveal">
+              <p>
+                Mencuci tangan sebelum dan<br />
+                sesudah memasuki lokasi acara.
+              </p>
+            </div>
+            <br />
+            <div class="tengah-prokes reveal">
+              <img
+                src="asset/prokes/jaga jarak.png"
+                alt="jaga jarak"
+                height="80"
+                width="80"
+              />
+            </div>
+            <div class="teks-prokes reveal">
+              <p>
+                Tidak berkerumun, dengan<br />
+                menjaga jarak satu sama lain.<br />
+                <br />
+                --
+              </p>
+            </div>
+            <div class="teks-prokes reveal">
+              <p>
+                Terima kasih atas pengertian<br />
+                Bapak/Ibu/Saudara/i, Semoga<br />
+                dengan melakukan protokol<br />
+                kesehatan diatas, Kita semua dapat<br />
+                terjaga dari Covid-19.
+              </p>
+            </div>
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+      <div class="whishes">
+        <div class="teksalign center">
+          <br />
+          <div class="teksjudul reveal">
+            <p>Do'a Untuk kedua Mempelai :</p>
+          </div>
+          <div class="teks-wishes reveal">
+            <p>
+              بَارَكَ اللهُ لَكُماَ وَبَارَكَ عَلَيْكُماَ وَجَمَعَ بَيْنَكُمَا
+              <br />فِي خَيْرٍ
+
+              <br />
+              <br />
+              Baarakallahu lakumaa wa baaraka ‘alaikumaa
+              <br />
+              wa jama’a bainakumaa fii khair
+              <br />
+              <br />
+              Artinya: Semoga Allah karuniakan barakah pada kalian berdua, dan
+              semoga Ia limpahkan barakah atas kalian berdua, dan semoga Ia
+              himpun kalian berdua dalam kebaikan.
+              <br />
+              (HR. Abu Daud, Tirmidzi, dan Ibnu Majah)
+              <br />
+            </p>
+
+            <div>
+              <img
+                src="asset/wishes/bunga-tengah.png"
+                alt="bunga-tengah"
+                width="290"
+                height="20"
+              />
+            </div>
+            <br />
+            وَمِنۡ اٰيٰتِهٖۤ اَنۡ خَلَقَ لَكُمۡ مِّنۡ اَنۡفُسِكُمۡاَزۡوَاجًا
+            لِّتَسۡكُنُوۡۤا اِلَيۡهَا وَجَعَلَ بَيۡنَكُمۡ مَّوَدَّةًوَّرَحۡمَةً 
+            ؕ اِنَّ فِىۡ ذٰ لِكَ لَاٰيٰتٍ لِّقَوۡمٍ يَّتَفَكَّرُوۡنَ
+            <br />
+            <br />
+            “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+            untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan
+            merasa tentram kepadanya, dan dijadikan-Nya di antaramu rasa kasih
+            dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
+            tanda-tanda bagi kaum yang berpikir.”
+            <br />
+            <br />
+            (QS Ar-Rum: 21)
+            <br />
+            <br />
+          </div>
+          <div class="kotak tengah reveal">
+            <img
+              src="asset\wishes\fotoberduailus.png"
+              alt="foto berdua"
+              width="230"
+              height="235"
+            />
+          </div>
+          <br />
+          <br />
+          <div class="teksjudul reveal">
+            <p>
+              Kami Yang
+              <br />
+              Berbahagia
+            </p>
+          </div>
+          <div class="teks reveal">
+            <p>
+              Keluarga Ayah Fulana dan
+              <br />
+              Ibu Fulana
+              <br />
+              <br />
+              - & -
+              <br />
+              <br />
+              Keluarga Bapak Fulan dan
+              <br />
+              Ibu Fulan
+            </p>
+          </div>
+          <div class="bingkai-bawah center">
+            <img src="asset/home/bingkai-bunga-bawah.png" alt="bingkai bunga" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/animation.js"></script>
+  </body>
+</html>
