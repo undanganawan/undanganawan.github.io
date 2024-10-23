@@ -8,6 +8,30 @@
 <body>
     <h1>Selamat Datang di Undangan Awan</h1>
     <p>undangan yang berada di awan segingga dapat diakses secara online oleh para tamu anda</p>
-    
+    <ul id="template-list"></ul>
+
+
+    <script>
+        // Array of HTML file names in the 'templates' directory
+        const htmlFiles = [
+            'template1.html',
+            'template2.html',
+            // Add more files manually here
+        ];
+
+        // Get the ul element by its ID
+        const templateList = document.getElementById('template-list');
+
+        // Loop through the array and create list items with links
+        htmlFiles.forEach(file => {
+            const li = document.createElement('li');  // Create a list item element
+            const link = document.createElement('a'); // Create a link element
+            link.href = `templates/${file}`;          // Set the href to the file path
+            link.textContent = file;                  // Set the text content to the file name
+            li.appendChild(link);                     // Append the link to the list item
+            templateList.appendChild(li);             // Append the list item to the ul element
+        });
+    </script>
+
 </body>
 </html>
