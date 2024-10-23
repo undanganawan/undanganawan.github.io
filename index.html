@@ -14,8 +14,8 @@
     <script>
         // Array of HTML file names in the 'templates' directory
         const htmlFiles = [
-            'template1.html',
-            'template2.html',
+            'templates/wed-master/index.html',
+            'templates/wedding-master/index.html',
             // Add more files manually here
         ];
 
@@ -26,7 +26,7 @@
         htmlFiles.forEach(file => {
             const li = document.createElement('li');  // Create a list item element
             const link = document.createElement('a'); // Create a link element
-            link.href = `templates/${file}`;          // Set the href to the file path
+            link.href = `${file}`;          // Set the href to the file path
             link.textContent = file;                  // Set the text content to the file name
             li.appendChild(link);                     // Append the link to the list item
             templateList.appendChild(li);             // Append the list item to the ul element
