@@ -1,38 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <!-- Using PNG format -->
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
+    <!-- Optional: Using ICO format -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
     <title>undangan Awan</title>
-</head>
-<body>
-    <h1>Selamat Datang di Undangan Awan</h1>
-    <p>undangan yang berada di awan segingga dapat diakses secara online oleh para tamu anda</p>
-    <ul id="template-list"></ul>
+  </head>
+  <body>
+    <nav id="nav-head" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/logo.png"
+            alt="logo website"
+            class="logo-header"
+            srcset=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse d-flex justify-content-center navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#template">Template</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Harga</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    <div id="home" class="px-4 py-5 text-center hero">
+      <img
+        class="d-block mx-auto mb-4"
+        src="assets/logo.png"
+        alt="logo website undangan awan"
+        width="72"
+        height="72"
+        class="logo-hero"
+      />
+      <h1 class="hero-title">Undangan Awan</h1>
+      <h2>website undangan untuk acara anda</h2>
+      <div class="col-lg-6 mb-3 mx-auto">
+        <p class="lead mb-4">
+          Selamat datang di <strong>Undangan Awan!</strong> Pesan undangan
+          digital cantik mulai dari <strong>50k!</strong>.
+        </p>
+        <div class="d-grid pb-5 gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-hero btn-lg px-4 gap-3">
+            Pesan Sekarang
+          </button>
+          <a href="#template">
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Lihat Template
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="template" class="container mt-3">
+      <h1 class="template-title">List Template kami</h1>
+      <p>pilih template undagna yang anda sukai</p>
 
+      <div class="row tm-mb-90 tm-gallery">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img
+              src="assets\thumbnail\thumbnail1.jpeg"
+              alt="Image"
+              class="img-fluid"
+            />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>View Demo</h2>
+              <a href="templates/wed-master/index.html" target="_blank"
+                >View live demo</a
+              >
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span>Wedding 1</span>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img
+              src="assets\thumbnail\thumbnail2.jpeg"
+              alt="Image"
+              class="img-fluid"
+            />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>View Demo</h2>
+              <a href="templates/wedding-master/index.html" target="_blank"
+                >View live demo</a
+              >
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span>Wedding 2</span>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img
+              src="assets\thumbnail\thumbnail3.jpeg"
+              alt="Image"
+              class="img-fluid"
+            />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>View Demo</h2>
+              <a
+                href="templates/wedding-invitation/index.html?tamu=Andi"
+                target="_blank"
+                >View live demo</a
+              >
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span>Wedding 3</span>
+          </div>
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+
+    <div class="container">
+      <main id="pricing">
+        <h2 class="mb-5">List Harga Paket</h2>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Basic</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  Rp 50K<small class="text-body-secondary fw-light"
+                    >/tahun</small
+                  >
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Akses 1 tahun</li>
+                  <li>Nama Tamu</li>
+                  <li>Galery</li>
+                  <li>Alamat Acara</li>
+                  <li>Link Generator</li>
+                  <li>Hitung mundur</li>
+                  <li>Custom Subdomain</li>
+                </ul>
+                <a href="https://wa.me/6282234439795">
+                  <button
+                    type="button"
+                    class="w-100 bg-acsend btn btn-lg btn-primary"
+                  >
+                    Pesan
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  Rp 100k<small class="text-body-secondary fw-light"
+                    >/tahun</small
+                  >
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Akses 1 tahun</li>
+                  <li>Nama Tamu</li>
+                  <li>Galery</li>
+                  <li>Alamat Acara</li>
+                  <li>Link Generator</li>
+                  <li>Hitung mundur</li>
+                  <li>Custom Domain</li>
+                </ul>
+                <a href="https://wa.me/6282234439795">
+                  <button
+                    type="button"
+                    class="w-100 bg-acsend btn btn-lg btn-primary"
+                  >
+                    Pesan
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Enterprise</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  200K<small class="text-body-secondary fw-light">/tahun</small>
+                </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Akses 1 tahun</li>
+                  <li>Nama Tamu</li>
+                  <li>Galery</li>
+                  <li>Alamat Acara</li>
+                  <li>Link Generator</li>
+                  <li>Hitung mundur</li>
+                  <li>Custom Domain</li>
+                  <li>Kirim Pesan</li>
+                </ul>
+                <a href="https://wa.me/6282234439795">
+                  <button
+                    type="button"
+                    class="w-100 bg-acsend btn btn-lg btn-primary"
+                  >
+                    Pesan
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 34%"></th>
+                <th style="width: 22%">Free</th>
+                <th style="width: 22%">Pro</th>
+                <th style="width: 22%">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Dapat diakses 1 tahun</th>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Nama Tamu</th>
+                <td>'&#x2714;</td>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+              </tr>
+            </tbody>
+
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Galery</th>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Alamat acara</th>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Link Generator</th>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Hitung mundur</th>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Custom Subdomain</th>
+                <td>&#x2714;</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Custom Domain</th>
+                <td></td>
+                <td>&#x2714;</td>
+                <td>&#x2714;</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Kirim Pesan</th>
+                <td></td>
+                <td></td>
+                <td>&#x2714;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <footer
+      class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <p class="col-md-4 mb-0 text-body-secondary">© 2024 Undangan Awan, Inc</p>
+
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+      >
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="#home" class="nav-link px-2 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#template" class="nav-link px-2 text-body-secondary"
+            >Template</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#pricing" class="nav-link px-2 text-body-secondary">Harga</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
     <script>
-        // Array of HTML file names in the 'templates' directory
-        const htmlFiles = [
-            'templates/wed-master/index.html',
-            'templates/wedding-master/index.html',
-            'templates/wedding-invitation/index.html?tamu=Andi',
-            // Add more files manually here
-        ];
-
-        // Get the ul element by its ID
-        const templateList = document.getElementById('template-list');
-
-        // Loop through the array and create list items with links
-        htmlFiles.forEach(file => {
-            const li = document.createElement('li');  // Create a list item element
-            const link = document.createElement('a'); // Create a link element
-            link.href = `${file}`;          // Set the href to the file path
-            link.textContent = file;                  // Set the text content to the file name
-            li.appendChild(link);                     // Append the link to the list item
-            templateList.appendChild(li);             // Append the list item to the ul element
-        });
+      $(window).on("load", function () {
+        $("body").addClass("loaded");
+      });
     </script>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
 
-</body>
+      var header = document.getElementById("nav-head");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("fixed");
+        } else {
+          header.classList.remove("fixed");
+        }
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,0 +1,70 @@
+.logo-header {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo-hero {
+  object-fit: contain;
+}
+
+.hero {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 241, 227, 1) 69%,
+    rgba(249, 231, 180, 1) 100%
+  );
+  margin-top: 0;
+}
+
+.hero-title {
+  font-size: 2rem;
+  color: #CE5A67;
+  margin : 2rem 0;
+}
+
+.btn-hero{
+    background-color: #CE5A67;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.template-title{
+    font-size: 1.5rem;
+    color: #1F1717;
+    margin : 1rem 0;
+}
+
+.color-acsend{
+    color: #CE5A67;
+}
+
+.bg-acsend{
+    background-color: #CE5A67;
+}
+
+/* Normal header styling */
+#nav-head {
+    width: 100%;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa; /* Optional: match bg-body-tertiary */
+}
+
+/* Fixed header styling when scrolling */
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+}
